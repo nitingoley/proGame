@@ -126,52 +126,93 @@
             color: aliceblue;
             justify-content: center;
         }
-        .lock
-        {
+
+        .lock {
             background-color: aliceblue;
             height: 300px;
             width: 300px;
             box-shadow: 0 2px 9px gray;
         }
-        .lock a 
-        {
-              text-decoration: none;
-              color: red;
-              font-size: 20px;
-              font-family: 'Courier New', Courier, monospace;
-             
-              
+
+        .lock a {
+            text-decoration: none;
+            color: red;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+
+
         }
-        h2{
+
+        h2 {
             width: 300px;
-            color : red;
-           font-size: 30px;
+            color: red;
+            font-size: 30px;
             display: inline-block;
             justify-content: center;
             text-align: center;
-            
+
         }
-        .lock a
-        {
+
+        h2:hover {
+            color: blanchedalmond;
+            cursor: progress;
+        }
+
+        .lock a {
             font-weight: 600;
-            color:black;
-            --s: 0.1em;   /* the thickness of the line */
-  --c: #1095c1; /* the color */
-  
-  color: #0000;
-  padding-bottom: var(--s);
-  background: 
-    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: 0.5s;
+            color: black;
+            --s: 0.1em;
+            /* the thickness of the line */
+            --c: #1095c1;
+            /* the color */
+            animation-name: spin;
+
+            color: #0000;
+            padding-bottom: var(--s);
+            background:
+                linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%,
+                linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+            -webkit-background-clip: text, padding-box;
+            background-clip: text, padding-box;
+            transition: 0.5s;
         }
-         .lock a:hover{
+
+        .lock a:hover {
             --_p: 100%
+        }
 
 
-         }
+
+        @keyframes spin {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+
+   
+         /* Hover the image */
+         .image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 540px;
+}
+.image-box img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
 
 
 
@@ -208,31 +249,31 @@
                 <br>
                 <br>
                 <!-- <div class="lock"> -->
-                    <h2>Tutorials List</h2>
-                    <div class="lock">
-                     <br>
-                    <a class= "pe" href="">Tutorial -1</a>
+                <h2>Tutorials List</h2>
+                <div class="lock">
+                    <br>
+                    <a class="pe" href="">Tutorial -1</a>
                     <br>
                     <br>
                     <a href="">Basic</a>
                     <br>
                     <a href="">Introduction</a>
-  <br>              
+                    <br>
                     <a href="">Set up</a>
                     <a href=""></a>
                 </div>
-                </div>
             </div>
         </div>
+        </div>
         <br>
-        <div class="image"><img src="https://i.pinimg.com/736x/58/34/c3/5834c3216cee85ef6badac62b4ec5d93.jpg"
+        <div class="image-box"><img src="https://i.pinimg.com/736x/58/34/c3/5834c3216cee85ef6badac62b4ec5d93.jpg"
                 height="500px" alt="" srcset=""></div>
 
     </section>
     <footer>
         <div class="jk"><a href="http:///www.instagram.com/direct/inbox/">Click here for more information</a></div>
     </footer>
-<script src="ani.js"></script>
+    <script src="ani.js"></script>
 </body>
 
 </html>
