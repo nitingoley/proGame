@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="tutorial.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+</head>
+
+<body>
+<div class="top-line"></div>
+  <header class="header">
+    <!-- <a href="#" class="si"><img
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f9f91a15775639.560390e39e7ae.jpg"
+                width="50px" height="50px" alt="" srcset=""></a> -->
+    <a href="#" class="logo"></a>
+    <!-- NAVINGATION BAR STARTS HERE-->
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Learn More</a>
+
+    </nav>
+    <!-- NAVINGATION BAR ENDS HERE-->
+  </header>
+  <section class="Home">
+    <div class="home-c">
+      <h3>Free Full course</h3>
+      <h1>Game Development Unity Crash Course</h1>
+      <h3>Desinged by <span>Ayush Sharma</span></h3>
+      <br>
+      <p>Content Add soon please wait</p>
+    </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+
+    </div>
+    <br>
+    <!-- <div class="image-box"><img src="https://i.pinimg.com/736x/58/34/c3/5834c3216cee85ef6badac62b4ec5d93.jpg"
+                height="500px" alt="" srcset=""> -->
+    </div>
+
+    </div>
+  </section>
+  <p class="text-heading">Tutorials </p>
+  <br>
+  <br>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href="gameTutorial.html">Game Development Tutorial </a></div>
+      <div class="swiper-slide"><a href="#">Web Development Tutorial</a></div>
+      <div class="swiper-slide"><a href="#">Java Tutorial</a></div>
+      <div class="swiper-slide"><a href="#">Python Tutorial</a></div>
+      <div class="swiper-slide"><a href="#">JavaScript Tutorial</a></div>
+      <div class="swiper-slide"><a href="#">Software Testing</a></div>
+      <div class="swiper-slide"><a href="#">Operating System Tutorial</a></div>
+      <!-- <div class="swiper-slide"><a href="#">Tutorial-1</a>8</div> -->
+      <!-- <div class="swiper-slide">Slide 9</div>
+  </div> -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!--Add Footer some basic information-->
+    <footer>
+      <div class="general-info">
+
+        <p>© Copyright 2011-2021 www.notDecide.com. All rights reserved. Developed by Ourteam. </p>
+        <br>
+        <div class="first-child"></div>
+          <div class="left-child"></div>
+            <a id="a" href="#">Contact</a>
+            <br>
+            <a id="b" href="#">Ourname detail</a>
+          
+        </div>
+    </footer>
+    <!-- <script src="tutorial.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+  <!-- Add JavaScript here-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },
+        },
+      });
+    </script>
+
+</body>
+
+</html>
