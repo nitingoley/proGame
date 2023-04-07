@@ -279,7 +279,7 @@ body {
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #2477a7;
+    background: #248b7c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,7 +305,7 @@ body {
 
 .swiper-pagination-bullet-active {
     color: #ffffff;
-    background: #007aff;
+    background: #09b6e6;
 
 }
 
@@ -323,7 +323,7 @@ body {
     font-size: 16px;
     justify-content: center;
     color: #fff;
-    background-color: #000;
+    background-color: yellow;
     height: 20px;
     width: 100vw;
 }
@@ -378,8 +378,11 @@ body {
     font-size: 18px;
     height: 130px;
     width: 100vw;
-    color: #000000;
-    background-color: #f70909;
+    /* color: #000000; */
+    background-color: black;
+}
+.general-info p{
+    color: white;
 }
 .first-child
 {
@@ -396,7 +399,7 @@ float: left;
     text-align: center;
     margin-left: 50%;
     height: 40px;
-    color: #007aff;
+    color: white;
     text-decoration: none;
 font-size: 18px;
 }
@@ -405,8 +408,25 @@ font-size: 18px;
 {
     font-size: 18px;
     text-decoration: none;
-    color: #007aff;
+    color: white;
     margin-left: 50%;
     height: 40px;
 
+}
+
+
+/* Set-up image left here code */
+
+
+img
+{
+    display: inline-block;
+    text-align: left;
+    justify-content:right;
+}
+
+.photo
+{
+    padding-bottom: 9000px;
+    padding-left: 600px;
 }
