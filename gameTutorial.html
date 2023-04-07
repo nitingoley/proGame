@@ -6,10 +6,11 @@
     <style>
         body {
             font-family: "Lato", sans-serif;
+            background-color:  black;
         }
 
         .heading {
-            height: 100%;
+            height: 80%;
             width: 200px;
             position: fixed;
             z-index: 1;
@@ -18,6 +19,7 @@
             background-color: #111;
             overflow-x: hidden;
             padding-top: 20px;
+            box-shadow: 0 6px 4px  black;
         }
 
         .heading a {
@@ -52,14 +54,98 @@
 
             text-align: center;
             justify-content: center;
-            color: rgb(20, 4, 77);
-                }
-  .paragraph-1
+            color: red;
+        }
+
+        .first-line {
+            text-align: center;
+        }
+
+        .paragraph-1 {
+            color: black;
+        }
+
+        
+        ul {
+            text-align: center;
+        }
+
+        /* Bullet part */
+        .bullet {
+            color: rgb(250, 5, 5);
+            padding-right: 180px;
+            list-style-type: square;
+        }
+
+        .bullet ul li {
+            display: inline;
+            list-style-type: square;
+            text-align: c;
+        }
+        li{
+            list-style-type: circle;
+        }
+        .second-2 p
+        {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            text-align: left;
+        }
+            /* Add next box */
+
+  .next
   {
-    color: black;
+    width: 140px;
+    height: 20px;
+    /* background-color: aqua; */
+ 
+  }
+  
+  .next
+  {
+   justify-items: right;
+   left: 100;
+    padding: 0 1020px;
+    color: red;
   }
 
-  </style>
+  .next a{
+    color: red;
+    font-size: 20px;
+    font-style: oblique;
+    text-decoration: none;
+  }
+  
+  /* Add hover of next */
+.next a::before{
+    content: '';
+ border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+  .next a:hover
+{
+    cursor: bold;
+}
+.next a:hover::before
+{
+transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+  
+}
+.next a:hover
+{    
+    color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+
+}
+
+
+
+    </style>
 </head>
 
 <body>
@@ -72,12 +158,22 @@
     </div>
 
     <div class="main">
-        <h2 id="first-line">Adding Vibration To Unity3d</h2>
-       
+        <h2 class="first-line">Adding Vibration To Unity3d</h2>
+
         <br>
         <h3>Making Your Game Feel More Real: Adding Vibration Effects to Unity 3D</h3>
-   <p class="paragraph-1">If you're creating a game for mobile devices, you may want to add some haptic feedback to enhance the user experience. Vibration is a simple and effective way to achieve this, and fortunately, it's easy to implement in Unity 3D. In this tutorial, we'll show you how to add vibration to your Unity game.</p>
-   </div>
+        <div class="second-2">
+        <p class="paragraph-1">If you're creating a game for mobile devices, you may want to add some haptic feedback to
+            enhance the user experience. Vibration is a simple and effective way to achieve this, and fortunately, it's
+            easy to implement in Unity 3D. In this tutorial, we'll show you how to add vibration to your Unity game.</p>
+        <p class="paragraph-2">For adding vibrations to our game we are going to write a simple C# script to achieve our
+            goal.</p>
+            <br>
+            <br>
+        </div>
+
+         <div class="next"><a href="chap1page2.html">Next</a></div>
+    </div>
 </body>
 
 </html>

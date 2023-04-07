@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter first game Development</title>
+    <link rel="stylesheet" href="chap1page2.css">
+</head>
+
+<body>
+    <header>
+        <div class="handing">
+            <div class="start-main">
+                <ul>
+                    <li>Right Click anywhere on your project panel and click on "Create" and choose C# script.</li>
+                    <li>Name This Script as "VibrationController" and open the script in any code editor.</li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <!--Add  first pic here-->
+
+                <div class="pic1"><img src="Pic1.png" width="240px" alt="" srcset=""></div>
+                <!--Add second pic here-->
+                <br>
+                <br>
+                <br>
+                <div class="pic-2">
+                    <ul>
+                        <li>By default the script would look like this</li>
+                </div>
+                </ul>
+                <br>
+                <br>
+                <div class="pic2"><img src="Pic2.png" alt=""></div>
+
+                <br>
+                <br>
+                <div class="pic3-para">
+                    <ul>
+                        <li> Remove the upper two lines that are using namespace System as we dont need them.</li>
+                        <li>Mark the class as static so we can access it from anywhere and remove the monobehaviour as
+                            we dont need it.</li>
+                        <li>Remove the start and update function.</li>
+                        <li>Now the Script would look like this.</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <div class="pic-3"><img src="PIC3.png" alt=""></div>
+                    <br>
+                    <br><br>
+                    <br>
+                    <ul>
+                        <li>Now we will declare a static AndriodJavaClass (AndroidJavaClass is the Unity representation
+                            of a generic instance of java.lang.Class.);
+                            also we will need to declare a static AndroidJavaObject class to get the current activity of
+                            the Android device and another to call any event
+                            for that activity.</li>
+                        <br>
+                        <li>So write the code given below</li>
+                    </ul>
+                    <br>
+                    <br>
+
+                  
+                        <code>
+    //Code start
+    <br>
+    <p> public static AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");</p>
+   <p> public static AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");</p>
+   <p>public static AndroidJavaObject  vibrator = currentActivity.Call<AndroidJavaObject>("getSystemService","vibrator");     </p>
+    
+    </code>
+
+                     
+
+   
+
+
+
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+
+
+</body>
+
+</html>
