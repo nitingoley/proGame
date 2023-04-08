@@ -4,6 +4,12 @@
      margin: 0;
      padding: 0;
  }
+ body
+ {
+    color: gray;
+    font-family: 'Hind', sans-serif;
+font-family: 'Roboto', sans-serif;
+ }
 
  .start-main {
 
@@ -43,9 +49,46 @@
 {
     text-align: center;
     justify-content: center;
-    display: ab;
+    transition: transform .2s;
+}
+.pic2:hover
+{
+    transform: scale(1.2);
 }
 .pic-3
 {
     text-align: center;
+    transition: transform .2s;
+}
+.pic-3:hover{
+    transform: scale(1.2);
+
+}
+/* Add next-page*/
+.next-page 
+{   
+    font-size: 30px;
+    text-align: right;
+ 
+
+}
+.next-page a{
+    text-decoration: none;
+
+}
+.next-page a:hover
+{
+    color: rgb(237, 7, 19);
+}
+/*Footer details add */
+.foooter-info
+{ text-align: center;
+
+    display: block;
+}
+.foooter-info a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }

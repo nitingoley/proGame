@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Hind', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.start-main2
+{
+     height: 80vh;
+     width: 80vw;
+     position: absolute;
+     color: black;
+     font-size: 18px;
+     background-color: white;
+     left: 50%;
+     top: 30%;
+     transform: translate(-50%, -25%);
+}
+.heading2 {
+    width: 100vw;
+    height: 120vh;
+    background: white;
+    position: relative;
+}
+.pic4 
+
+{
+    text-align: center;
+    
+}
+.pic4 img
+{
+    height: 200px;
+    width: 550px;
+    transition: transform .2s;
+}
+.pic4:hover {
+    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  } 
+.pic5
+{
+    text-align: center;
+}
+.pic5 img{
+    width: 500px;
+    height: 500px;
+    transition: transform .2s;
+}
+.pic5 :hover
+{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+/* Adjust Previous button */
+.back-track
+{
+  padding-top: 40px;
+  padding-left: 80px;
+    font-size: 25px;
+    font-style: normal;
+    text-decoration: none;
+
+}
+.back-track a{
+    text-decoration: none;
+     /* background-color: black; */
+     color: blue;
+}
+.back-track a:hover{
+    color: gold;
+}
+/* Add writer or designer name*/ 
+
+.writer
+{
+    text-align: center;
+}
+.designer
+{
+    text-align: center;
+}
