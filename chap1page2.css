@@ -92,3 +92,59 @@ font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 18px;
 }
+/* Add writer or designer name*/ 
+
+.writer
+{
+    text-align: center;
+}
+.designer
+{
+    text-align: center;
+}
+/* Pic -4 */
+.pic4 
+
+{
+    text-align: center;
+    
+}
+.pic4 img
+{
+    height: 200px;
+    width: 550px;
+    transition: transform .2s;
+}
+.pic4:hover {
+    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  } 
+
+  /* Pic -5 adjust*/
+  .pic5
+{
+    text-align: center;
+}
+.pic5 img{
+    width: 500px;
+    height: 500px;
+    transition: transform .2s;
+}
+.pic5 :hover
+{
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+code
+{
+font-weight: 500px;
+font-size: 17px;
+font-style: initial;
+}
+
+/*Footer adjust */
+.adjust
+{
+height:  30px;
+width: 100vw;
+
+
+}

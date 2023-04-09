@@ -80,25 +80,122 @@
                     <br>
                     <br>
                     <br>
-                    <div class="next-page"><a href="chap1page3.html">next</a></div>
+                    <!-- <div class="next-page"><a href="chap1page3.html">next</a></div> -->
 
+                    <div class="start-main2">
 
-                    <br>
+                        <ul>
 
-                    <footer>
-                        <div class="foooter-info">
-                            <a href="https://www.linkedin.com/in/ayush-sharma-048477212/">Ayush Sharma(Indie
-                                GameDeveloper)</a>
+                            <li>AWe only need the above lines when we are out of unity editor or in Android Device so
+                                surrounding this code in IF region, the code will look like this now.</li>
+                        </ul>
+                        <br>
+                        <div class="pic4"><img src="pic4.png" width="900px" alt="" srcset=""></div>
+                        <div class="line2">
+
+                            <br>
+                            <ul>
+                                <li>Lets also create a function to check wheather the currently running device in an
+                                    Andriod Or
+                                    Not and we are not in Unity Editor.
+                                </li>
+
+                            </ul>
+                            <br><br>
+                            <code>
+        <p>
+            //Code
+                <p>    public static bool isAndroid() </p>
+                <p>    {
+                    <p>       #if UNITY_ANDROID && !UNITY_EDITOR</p>
+                        <p>         return true;</p>
+                            <p>    #else</p>
+                               
+                            <p>    return false;</p>
+                           <p> #endif</p>
+                  <p>  }</p>
+         
+        
+                            </code>
+                            <br>
                             <br>
 
-                            <a href="https://www.linkedin.com/in/nitin-gole-869322232/">Website designed by Nitin
-                                Goley</a>
-                        </div>
-                    </footer>
+                            <ul>
+                                <li>Lets finally add a static funtion named "Vibrate" which will take the time in
+                                    milliseconds
+                                    for which we want device to vibrate(Deafult will be 250 miliseconds)</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <code>
+        <p> //CODE</p>
+        <p>   public static void Vibrate(long milliseconds = 250)</p>
+        <p>   {</p>
+            <p>           if(isAndroid())   //Checking wheather device is android or not</p>
+            <p>    {</p>
+                <p>         vibrator.Call("vibrate",milliseconds);</p>
+                          <p>     }</p>
+                          <p>   else</p>
+                          <p>    {</p>
+                            <p>        Handheld.Vibrate();  //For vibrating in Another Devices</p>
+                            <p>    }</p>
+                            <p>  }</p>
+        </p>
+        
+        </code>
+                            <br>
+                            <br>
+                            <ul>
+                                <li>inally the code would look like this</li>
+                            </ul>
+                            <br><br>
 
+                            <div class="pic5"><img src="PIC45.png" alt=""></div>
+                            <br>
+                            <br>
+                            <p>
+                                Now you just need to call the vibrate function of VibrationController script from
+                                anywhere in
+                                your project and can vibrate your device to add some effects to your game. In some cases
+                                you
+                                also need to cancle the vibration so for that add a function given below to your script.
+                            </p>
+                            <br>
+                            <br>
+                            <code>
+                        <p>
+                            //Source Code  </p>
+                            <p> public static void Cancle()  //Function to stop the vibration  </p>
+                            <p>  {  </p>
+                                <p>    if(isAndroid())  </p>
+                                <p>   {  </p>
+                                    <p>      vibrator.call("cancel");  </p>
+                                    <p>   }  </p>
+                                    <p>    }  </p>
+                
+                        
+                    </code>
+                            <footer>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="writer">---AYUSH SHARMA(Indie GameDeveloper)
+                                </div>
+                                <br>
+                                <div class="designer">---Website designed by Nitin Goley</div>
+                                <footer>
+                                    <div class="adjust">
+
+                                        
+                                    </div>
+                                </footer>
+
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+
 
 
     </header>
