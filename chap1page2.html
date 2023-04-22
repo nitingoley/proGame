@@ -68,15 +68,16 @@
                     <br>
                     <br>
 
-
-                    <code>
-    //Code start
+                    <div class="mycode1">    
+                        <code class="chain-1">
+    <h4>//Code start</h4>
     <br>
     <p> public static AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");</p>
    <p> public static AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");</p>
    <p>public static AndroidJavaObject  vibrator = currentActivity.Call<AndroidJavaObject>("getSystemService","vibrator");     </p>
     
     </code>
+                    </div>
                     <br>
                     <br>
                     <br>
@@ -101,22 +102,23 @@
                                 </li>
 
                             </ul>
-                            <br><br>
-                            <code>
-        <p>
-            //Code
-                <p>    public static bool isAndroid() </p>
-                <p>    {
-                    <p>       #if UNITY_ANDROID && !UNITY_EDITOR</p>
-                        <p>         return true;</p>
-                            <p>    #else</p>
-                               
-                            <p>    return false;</p>
-                           <p> #endif</p>
-                  <p>  }</p>
-         
-        
-                            </code>
+                            <br>
+                            <br>
+                            <div class="code-chain2">
+                            <code class="code-box2">
+                           
+                   <h4>//Code start</h4>
+                   <br>
+                <p>public static bool isAndroid() </p>
+                <p>{</p>
+                    <p>#if UNITY_ANDROID && !UNITY_EDITOR</p>
+                        <p>return true;</p>
+                        <p>#else</p>    
+                        <p>return false;</p>
+                        <p> #endif</p>
+                  <p>}</p> 
+                     </code>
+                     </div>
                             <br>
                             <br>
 
@@ -127,8 +129,10 @@
                             </ul>
                             <br>
                             <br>
-                            <code>
-        <p> //CODE</p>
+            <div class="box3">
+                            <code class="code-chain3">
+        <h4>/* Code start */</h4>
+        <br>
         <p>   public static void Vibrate(long milliseconds = 250)</p>
         <p>   {</p>
             <p>           if(isAndroid())   //Checking wheather device is android or not</p>
@@ -140,10 +144,11 @@
                             <p>        Handheld.Vibrate();  //For vibrating in Another Devices</p>
                             <p>    }</p>
                             <p>  }</p>
-        </p>
+      
         
         </code>
-                            <br>
+           </div>
+        <br>
                             <br>
                             <ul>
                                 <li>inally the code would look like this</li>
@@ -162,9 +167,11 @@
                             </p>
                             <br>
                             <br>
-                            <code>
-                        <p>
-                            //Source Code  </p>
+                            <div class="box4">
+                            <code class="box-chain-4">
+                         
+                         <h4>//Code  start</h4>
+                         <br>
                             <p> public static void Cancle()  //Function to stop the vibration  </p>
                             <p>  {  </p>
                                 <p>    if(isAndroid())  </p>
@@ -175,6 +182,7 @@
                 
                         
                     </code>
+                </div>
                             <footer>
                                 <br>
                                 <br>
@@ -184,10 +192,18 @@
                                 </div>
                                 <br>
                                 <div class="designer">---Website designed by Nitin Goley</div>
-                                <footer>
-                                    <div class="adjust">
 
-                                        
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <footer>
+                                    
+                                   
+                                    <div class="adjust">
+                                        <p>© Copyright 2023-2024 www.unkown.com. All rights reserved. Developed by
+                                            unkown.</p>
+
                                     </div>
                                 </footer>
 

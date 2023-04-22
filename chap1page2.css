@@ -6,7 +6,7 @@
  }
  body
  {
-    color: gray;
+    color: grey;
     font-family: 'Hind', sans-serif;
 font-family: 'Roboto', sans-serif;
  }
@@ -145,6 +145,112 @@ font-style: initial;
 {
 height:  30px;
 width: 100vw;
+}
 
+/* Adjust footer */
+.adjust
+{
+    text-align: center;
+    color: blue;
+}
+
+/* Add code in boxes....*/
+.chain-1
+{
+    margin: 140px;
+}
+.mycode1
+{
+    width: 600px;
+    height: 34vh;
+    background-color: black;
+    box-shadow: 0 8px 10px black;
+}
+.chain-1 p{
+ text-decoration-style: wavy;
+     padding-left: 12px;
+     color: white;
+}
+
+.chain-1 h4{
+   padding-left: 12px;
+   color: red;
+}
+
+/* Code-2 box */
+.code-chain2
+{
+
+     width: 50vw;
+     height: 40vh;
+     background-color: black;
+     box-shadow: 0 8px 10px gray;
+}
+
+.box3
+{
+    width: 600px;
+    
+    height: 45vh;
+    background-color: black;
+    box-shadow: 0 8px 10px black;
 
 }
+.code-chain3 h4{
+    padding-left: 12px;
+    margin-top: 2px;
+    color: red;
+}
+
+.code-chain3 p
+{
+    padding-left: 12px;
+    margin: 4px;
+color: white;
+}
+
+/* code box 4 */
+
+.box4
+{
+    width: 600px;
+    height: 32vh;
+  background-color: black;
+ box-shadow:  0 8px 12px;
+}
+ 
+/*Style in code-4 text */
+
+.box-chain-4 h4{
+color: red;
+padding-left: 12px;
+}
+.box-chain-4 p{
+    color:white ;
+    padding-left: 12px;
+}
+
+
+/*box 2 code*/
+.code-box2 h4
+{
+ color: red;
+ padding-left: 12px;
+
+}
+
+.code-box2 p
+{
+    padding-left: 12px;
+ 
+color: aliceblue;
+
+}
+
+
+
+
+
+
+
+
