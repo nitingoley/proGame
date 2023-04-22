@@ -135,13 +135,13 @@
         <br>
         <p>   public static void Vibrate(long milliseconds = 250)</p>
         <p>   {</p>
-            <p>           if(isAndroid())   //Checking wheather device is android or not</p>
+            <p>           if(isAndroid()) <span>//Checking wheather device is android or not</p>
             <p>    {</p>
                 <p>         vibrator.Call("vibrate",milliseconds);</p>
                           <p>     }</p>
                           <p>   else</p>
                           <p>    {</p>
-                            <p>        Handheld.Vibrate();  //For vibrating in Another Devices</p>
+                            <p>        Handheld.Vibrate(); <span>//For vibrating in Another Devices</p>
                             <p>    }</p>
                             <p>  }</p>
       
@@ -172,7 +172,7 @@
                          
                          <h4>//Code  start</h4>
                          <br>
-                            <p> public static void Cancle()  //Function to stop the vibration  </p>
+                            <p> public static void Cancle() <span>//Function to stop the vibration </p>
                             <p>  {  </p>
                                 <p>    if(isAndroid())  </p>
                                 <p>   {  </p>
